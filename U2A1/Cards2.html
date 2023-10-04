@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cards 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/cf1898893d.js" crossorigin="anonymous"></script>
+        <style>
+            .image-overlay {
+                position: relative;
+            }
+    
+            .image-overlay img {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+            }
+
+            .floo-card {
+                border-top: 2px solid #0088ff;
+            }
+
+            .custom-img {
+    width: 75px; 
+    height: auto; 
+}
+        </style>   
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Primera columna -->
+            <div class="col-md-6">
+                <!-- Pareja de tarjetas 1 -->
+                <div class="fila-1 row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-flask fa-2xl" style="color: #005eff;"></i>
+                                <hr>
+                                <p class="card-text">45 Test</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-bullseye fa-2xl" style="color: #d21414;"></i>
+                                <hr>
+                                <p class="card-text">17 Targets</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pareja de tarjetas 2 -->
+                <div class="fila-2 row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-tree fa-2xl" style="color: #18a216;"></i>
+                                <hr>
+                                <p class="card-text">39 Views</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-chart-column fa-2xl" style="color: #ffbb00;"></i>
+                                <hr>
+                                <p class="card-text">4 Categories</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="texto1" class="form-label">Grapes</label>
+                                    <hr>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="texto2" class="form-label">Milk</label>
+                                    <hr>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="texto3" class="form-label"> ♡ Apple Chips </label>
+                                    <hr>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="texto4" class="form-label">Fried Dough</label>
+                                    <hr>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="texto5" class="form-label">Salad</label>
+                                    <hr>
+                                </div>
+                                <button type="submit" class="btn btn-block btn-primary w-100">Read More</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Segunda columna -->
+            <div class="col-md-6">
+                <!-- Tarjeta "Sponsor" -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sponsor</h5>
+                        <img src="imagenrota.jpg" class="img-fluid">
+                        <p class="card-text">Shiny, shiny. Various azdipiscing elit. Duis pharetra codeply various quam sit amet vulputate. Ovi lipsim diro?</p>
+                        <br>
+                        <a href="#" class="btn btn-outline-dark btn-block btn-sm" style="position: absolute; bottom: 10px; left: 10px;">Take Action!</a>
+                        <div class="image-overlay">
+                            <img src="https://i.pinimg.com/564x/1e/db/37/1edb375ee3f7b2ae33b975abcd664058.jpg" class="img-fluid custom-img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Tarjeta "Floo Froo" -->
+                <div class="floo-card card">
+                    <div class="card-body">
+                        <h5 class="card-title">Floo Froo</h5>
+                        <p class="card-text">Horton is a weenie with clever lyrics. This is a background image card.</p>
+                        <p class="card-text">LikePosts</p>
+                        <p class="card-text">9 45</p>
+                    </div>
+                </div>
+            </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>

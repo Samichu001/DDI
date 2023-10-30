@@ -1,0 +1,548 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/*Esta parte está configurando la cabecera de la web*/
+
+.header {
+    display: flex;
+}
+
+.body .titulo {
+    text-align: center;
+    font-size: 40px;
+}
+
+.body .bodyheader {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/004/405/039/small/blue-and-red-color-gradient-background-free-vector.jpg);
+    background-size: cover;
+    width: auto;
+    height: auto;
+}
+
+
+.body .topheader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body .topheader .izquierda {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.body .topheader .izquierda .link {
+    color: white;
+}
+
+.body .topheader .derecha {
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.body .topheader .derecha .link{
+    color: white;
+}
+
+.link {
+    color: white;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Desde aquí estoy creando el menu de la web */  
+
+.menu {
+    display: flex;
+    text-align: center;
+}
+
+.menu .submenu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu .submenu ul li a {
+    display: inline-block;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu .submenu ul li ul a {
+    display: inline-block;
+    color: black;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.menu .submenu ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+/*.menu .submenu ul li:hover {
+    background: #5b78a7;
+}
+*/
+/* Aquí esta creado el submenu de la web */
+
+.menu .submenu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    padding: 0;
+}   
+   
+.menu .submenu ul ul li {
+    float: none;
+    width: 150px
+}
+   
+.menu .submenu ul ul a {
+    line-height: 120%;
+    padding: 10px 15px;
+}
+   
+.menu .submenu ul li:hover > ul {
+    display: block;
+}
+
+h2 {
+    color: white;
+}
+
+.menu .submenu .menuul {
+    display: flex;
+    text-align: center;
+}
+
+  /* Configuracion formulario de registro*/
+
+.bodysignup{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.bodysignup .signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formulario {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px;
+}
+
+.tituloregistro {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.registro {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.entrada {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 7px;
+    font: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+.pestañaentrada {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: lightgray;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.submit {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: lightsalmon;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.submit:hover {
+    background-color: orangered;
+    transform: translateY(-2px);
+}
+
+/*Configurando en Index*/
+
+.imageninicio img {
+    scale: 60%;
+    border-radius: 70px;
+}
+
+.destacada_nike {
+    display: block;
+    width: auto;
+}
+
+.destacada_adidas_titulo {
+    text-align: center;
+}
+
+.color_destacado_titulo {
+    color: black;
+}
+
+.masbuscadas_nike {
+    display: flex;
+    object-fit: fill;
+    text-align: left;
+}
+
+.primera_nike {
+    position: relative;
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.segunda_nike {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.tercera_nike {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.masbuscadas_dc {
+    display: flex;
+    object-fit: fill;
+    text-align: left;
+}
+
+.destacada_dc {
+    display: block;
+    width: auto;
+}
+
+.primera_dc {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.segunda_dc {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.tercera_dc {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.masbuscadas_adidas {
+    display: flex;
+    object-fit: fill;
+    text-align: left;
+}
+
+.destacada_adidas {
+    display: block;
+    width: auto;
+}
+
+.primera_adidas {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.segunda_adidas {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.tercera_adidas {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.masbuscadas_converse {
+    display: flex;
+    object-fit: fill;
+    text-align: left;
+}
+
+.destacada_converse {
+    display: block;
+    width: auto;
+}
+
+.primera_converse {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+    margin-bottom: 100px;
+}
+
+.segunda_converse {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+    margin-bottom: 100px;
+}
+
+.tercera_converse {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+    margin-bottom: 100px;
+}
+
+/* Configuración del footer*/
+
+footer {
+    display: flex;
+    background-color: black;
+}
+
+.footer_content {
+    display: flex;
+    align-items: right;
+    text-align: right;
+}
+
+.link_footer {
+    display: flex;
+    align-items: center;
+}
+
+.link_footer_list {
+    display: flex;
+    width: auto;
+    color: white;
+    text-align: right;
+}
+
+.link_footer_izquierdo {
+    display: flex;
+    color: white;
+}
+
+.link_footer_derecho {
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+.img_footer img{
+    display: block;
+    margin: 0%;
+    height: auto;
+    width: 150px;
+    align-items: center;
+}
+
+/* Diseño de la página de Nike*/
+
+.body_nike {
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    /*background-image: url(https://i.pinimg.com/originals/27/15/89/2715891fba975d4f4880706263761286.jpg);*/
+    margin-top: 50px;
+}
+
+.video_nike {
+    border-radius: 5px;
+}
+
+.body_nike span {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.miniheader_nike {
+    background-color: lightgray;
+}
+
+.nike_jordan {
+    display: block;
+    width: auto;
+}
+
+.ejemplos_jordan {
+    display: flex;
+    object-fit: fill;
+    text-align: center;
+}
+
+.nike_skate {
+    display: block;
+    width: auto;
+}
+
+.ejemplos_skate {
+    display: flex;
+    object-fit: fill;
+    text-align: center;
+}
+
+.nike_basket {
+    display: block;
+    width: auto;
+}
+
+.ejemplos_basket {
+    display: flex;
+    object-fit: fill;
+    text-align: center;
+}
+
+.nike_primera {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+    text-align: right;
+    background-color: lightgrey;
+    margin-bottom: 100px;
+    border-width: 10px;
+}
+
+.nike_primera span {
+    color: black;
+}
+
+.nike_segunda {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+    text-align: right;
+    background-color: lightgrey;
+    margin-bottom: 100px;
+}
+
+.nike_segunda span {
+    color: black;
+}
+
+.nike_tercera {
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    width: 500px;
+    text-align: right;
+    background-color: lightgrey;
+    margin-bottom: 100px;
+}
+
+.nike_tercera span {
+    color: black;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+_____________________________________________________________________________________________
+
+/* PRUEBAS */
+
+.contenedor {
+    position: relative;
+    height: 290px;
+    width: 290px;
+    margin: 50px 20px;
+    float: left;
+  }
+  
+  .contenedor img {
+    position: absolute;
+    left: 0;    
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .contenedor img.top:hover {
+    opacity: 0;
+  }

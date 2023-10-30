@@ -1,0 +1,110 @@
+/* Imagen de fondo para la página web */
+
+.bodynike {
+    background-image: url(https://th.bing.com/th/id/OIP.kRE0IZ1HQyiJRqKCRs1iEwHaEK?w=302&h=180&c=7&r=0&o=5&pid=1.7);
+}
+
+.bodydc {
+    background-image: url(https://wallpaperaccess.com/full/2078711.jpg);
+}
+
+.bodyadidas {
+    background-color: lightcoral;
+}
+
+.bodyconverse {
+    background-image: url(https://images4.alphacoders.com/294/294884.jpg);
+}
+
+/* Título de la web */
+h1 {
+    color: black
+}
+
+/* Desde aquí esta creado el menu de la web */  
+
+.menu {
+    background-color: lightblue;
+}
+
+.menu .submenu {
+    margin-left: 25%;
+}
+
+.menu .submenu ul {
+    list-style: none;
+    text-align: left;
+}
+
+.menu .submenu ul li {
+    background-color: white;
+}
+
+.menu .submenu ul a {
+    display: inline-block;
+    color: black;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu .submenu ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+/*.menu .submenu ul li:hover {
+    background: #5b78a7;
+}
+*/
+/* Aquí esta creado el submenu de la web */
+
+.menu .submenu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    padding: 0;
+}   
+   
+.menu .submenu ul ul li {
+    float: none;
+    width: 150px
+}
+   
+.menu .submenu ul ul a {
+    line-height: 120%;
+    padding: 10px 15px;
+}
+   
+.menu .submenu ul li:hover > ul {
+    display: block;
+}
+
+h2 {
+    color: white;
+}
+
+/* A partir de aquí empezamos a gestionar el diseño del index de la web*/
+
+.bodyindex .index .cabecera {
+    height: 300px;
+    width: 300px; 
+    margin-left: 25%; 
+    margin-top: 125px;
+}
+
+.cuerpoadidas .encabzadoadidas {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
